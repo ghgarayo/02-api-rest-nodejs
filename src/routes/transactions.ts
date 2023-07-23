@@ -6,6 +6,8 @@ import crypto from 'node:crypto'
 // middlewares
 import { checkIfSessionIdExists } from '../middlewares/check-if-session-id-exists'
 
+// Piramide de testes: E2E (não dependem de nenhuma tecnologia, nao dependem de arquitetura)
+
 export async function transactionsRoutes(app: FastifyInstance) {
   app.get(
     '/',
