@@ -12,7 +12,7 @@ afterAll(async () => {
 
 test('O usuário consegue criar uma nova transação', async () => {
   // fazer a chamada HTTP para criar uma nova transação
-  const response = await request(app.server).post('transactions').send({
+  const response = await request(app.server).post('/transactions').send({
     title: 'new transaction',
     amount: 5000,
     type: 'credit',
