@@ -6,7 +6,14 @@ import crypto from 'node:crypto'
 // middlewares
 import { checkIfSessionIdExists } from '../middlewares/check-if-session-id-exists'
 
-// Piramide de testes: E2E (não dependem de nenhuma tecnologia, nao dependem de arquitetura)
+/*
+    ===== Piramide de testes =====: 
+
+    Unitários: unidade da aplicação
+    Integração: comunicação entre duas ou mais unidades  
+    e2e - ponta à ponta: simulam um usário oprando na nossa aplicação (não dependem de nenhuma tecnologia, nao dependem de arquitetura de software )
+
+*/
 
 export async function transactionsRoutes(app: FastifyInstance) {
   app.get(
