@@ -102,9 +102,7 @@ export async function transactionsRoutes(app: FastifyInstance) {
           as: 'amount',
         })
 
-      return {
-        summary,
-      }
+      return { summary }
     },
   )
 }
